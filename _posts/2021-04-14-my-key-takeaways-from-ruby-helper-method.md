@@ -5,11 +5,11 @@ title:  "My Key Takeways from Ruby Helper Methods"
 
 This week, we learned about testing in Rails. Testing allows us to x. The link is [here](https://guides.rubyonrails.org/testing.html). For Part 1 of this assignment, we learned how to write clean code for a web application that stores a digital library of movies. 
 
-##REFACTORING ROUTES
+## REFACTORING ROUTES
 
 First, I refactored the routes to shorthand in routes.rb file. I updated the Hash syntax to be the modern syntax, by removing the curly braces and moving the : in :symbol to the end of the symbol, so now it reads as symbol:. I learned a new way to write routes. Instead of saying `get("/", {:controller ⇒ "movies", :action ⇒ "index"})`, we can instead say `get "/" => "movies#index"`. To make that even shorter, you can write, for the root path only, `root "movies#index`
 
-##ROUTE HELPER METHODS
+## ROUTE HELPER METHODS
 
 Second, we learned how to create routes helper methods. Take the line of code: 
 
@@ -29,11 +29,11 @@ In our movie library, the word "movie" would appear in many routes and tags thro
 
 `<a href = "<%=movie_path(42) %>"> #new, uses route helper method`
 
-##NEW WAY TO RENDER VIEW TEMPLATES
+## NEW WAY TO RENDER VIEW TEMPLATES
 
 Third, and probably a small note, I learned that we can remove the .html.erb extension when we render a template. So instead of writing `render template: "movies/new.html.erb"` we can say `render template: "movies/new"`. However, we can also shorten the render template function even more! If the name of the folder matches the controller - in this case, Movies_Controller - and if the file name matches the method name, we can remove `render template:` and `"movies/new.html.erb"` altogether. The program will know that we implicitly want to render this view file.
 
-##LINK_TO METHOD
+## LINK_TO METHOD
 
 Fourth, I learned how to use link_to methods, which is a simpler Ruby-version of ```<a> ```tags in HTML. The format is `<%= "Placeholder text", helper_method_path%>`. For example, `<%= link_to "Show details", movie_path(a_movie)%>`. If the helper method takes in a parameter, like an Active Record id, you can write, for example `<%= "Show details", a_movie%>`. The caveat for this is that the code follows standard convention, meaning that the Active Record Movie should be the same name as the movie helper method. 
 
@@ -41,7 +41,7 @@ Fourth, I learned how to use link_to methods, which is a simpler Ruby-version of
 
 Part 2 of this assignment focused on forms. 
 
-##NEW WAY TO MAKE FORMS
+## NEW WAY TO MAKE FORMS
 
 First, we learned a simpler way to create a form to add movies, which is 
 
@@ -53,11 +53,11 @@ First, we learned a simpler way to create a form to add movies, which is
 
 Other elements that we can add include label_tag, text_field_tag, text_area_tag, and button_tag. 
 
-##CONVENTION
+## CONVENTION
 
 Second, through this exercise, I learned a lot about Ruby convention; I'll probably save that for another blog post. 
 
-##NESTED PARAMETERS
+## NESTED PARAMETERS
 
 Third, I learned how to pass nested structures into a params hash. 
 
