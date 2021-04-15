@@ -11,11 +11,11 @@ For our first assignment of ADII, we have to complete the Ruby Koans. If you hav
 
 Here are (at least) three things I learned from [The Ruby Koans](http://rubykoans.com/):
 
-##1. assert_equal
+## ```assert_equal```
 
 This is the crux of making automated tests in Ruby. As the first koan about_asserts.rb, I believe it is definitely one of the most important. By using `assert_equal expected_value, actual_value`, we can automatically check to see if our code's output matches what we expect it to be. 
 
-##2. the .map function
+## ```the .map function```
 
 This method is a life-saver. Introduced in about_iteration.rb, it allows the coder to write an iterative loop in one line of code. 
 
@@ -39,7 +39,7 @@ end
 
 The `.map` function in arrays makes facilitates iteration and cleans up the code.
 
-##3. Regular Expressions
+##``` Regular Expressions```
 
 Admittedly, before doing the Ruby Koans, I didn't quite grasp regular expressions. In the koan about_regular_expressions.rb, not only did I learn how to use them to match words, characters, and numbers, but also new shorthands to do them! For example, instead of writing out `[/[a-zA-Z0-9_]+/]` to match word characters, we can write `[/\w+/]`. We can even do this with numbers, too! The typical regex for matching digits is `[/[0123456789]+/]`, but a short-hand is `[/\d+/]`. Moreover, I learned two new important functions to use in conjunction with regular expressions. One is `.scan` to find all instances of a regex and another is `.sub` to find and replace on instance of a regex. I already knew `.gsub` from AppDev1, which finds and replaces all instances of a regex.
 
