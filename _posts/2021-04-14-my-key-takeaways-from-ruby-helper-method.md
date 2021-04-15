@@ -23,7 +23,7 @@ In our movie library, the word "movie" would appear in many routes and tags thro
 
 `get "/movies/:id" => "movies#show", as: :movie`
 
-as: :details acts as a variable to hold the route path "/movies/:id". That way, in my <a> tags, I can write details_path(id) rather than the original url. That way, if I have to change the route, my code and HTML tags can still point to the same web page. For this part, I replaced the routes in the <a> tags to be 
+```as: :details``` acts as a variable to hold the route path ```"/movies/:id"```. That way, in my ```<a>``` tags, I can write details_path(id) rather than the original url. That way, if I have to change the route, my code and HTML tags can still point to the same web page. For this part, I replaced the routes in the ```<a>``` tags to be 
 
 `<a href = "/movies/42"> #old`
 
@@ -35,7 +35,7 @@ Third, and probably a small note, I learned that we can remove the .html.erb ext
 
 ##LINK_TO METHOD
 
-Fourth, I learned how to use link_to methods, which is a simpler Ruby-version of <a> tags in HTML. The format is `<%= "Placeholder text", helper_method_path%>`. For example, `<%= link_to "Show details", movie_path(a_movie)%>`. If the helper method takes in a parameter, like an Active Record id, you can write, for example `<%= "Show details", a_movie%>`. The caveat for this is that the code follows standard convention, meaning that the Active Record Movie should be the same name as the movie helper method. 
+Fourth, I learned how to use link_to methods, which is a simpler Ruby-version of ```<a> ```tags in HTML. The format is `<%= "Placeholder text", helper_method_path%>`. For example, `<%= link_to "Show details", movie_path(a_movie)%>`. If the helper method takes in a parameter, like an Active Record id, you can write, for example `<%= "Show details", a_movie%>`. The caveat for this is that the code follows standard convention, meaning that the Active Record Movie should be the same name as the movie helper method. 
 
 ---
 
