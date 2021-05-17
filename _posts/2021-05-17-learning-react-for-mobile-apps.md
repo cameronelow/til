@@ -1,0 +1,2 @@
+At this point in the quarter, App Dev 2 split into two tracks: Option A was to continue building Ruby apps and Option B was learning to make mobile apps. I decided to go with Option B and learn a new type of app development. Although my mobile apps would be simpler compared to the advanced Ruby apps I've made so far, I wanted to take on the challenge. As such, I'm learning React through Scrimba. It involves some JavaScript and JSX. Here are some of the key takeways from React.
+
