@@ -22,7 +22,7 @@ $.ajax({
     });
  ```
  
- ### The AJAX shortcut
+### The AJAX shortcut
 Instead of writing the above, I could use the ```link_to``` Ruby method to delete a comment and in the ```comments#destory``` action, I would render a JS template to do so. 
  ```
  <%= link_to comment,
