@@ -22,6 +22,37 @@ ReactDOM.render(
   document.getElementById("root")
 )
 ```
-My typical coding style involves breaking out my code into chunks rather than "embed" them in one long mega-method. As such, functional components mesh with my style, and I know I will be using them a lot in my mobile projects.
+My typical coding style involves breaking out my code into chunks rather than "embed" them in one long mega-method. As such, functional components mesh with my style, and I know I will be using them a lot in my mobile projects. I can also separate components into their own files, which contrasts with the long HTML files I've made in the past. You can also use class-based components in React. 
 
-##
+## Props
+Props (short for properties) are similar to HTML attributes. In order to reduce repetition in our functional components, we can use ```props``` to take in a user input. In one file, I could write
+```
+<ComponentName 
+  param1 = "one"
+  param2 = "two"
+  param3 = "three"
+/>
+```
+and in the ComponentName.js file, I'd write
+```
+function ComponentName(props){
+  return(
+    <div>
+      <h1>{props.param1}</h1>
+      <h2>{props.param2}</h2>
+      <h2>{props.param3}</h2>
+    </div>
+  )
+}
+```
+That way, I can have one functional component that I can pass any parameter into to build out my native app. You can also pass in an object with the parameters rather than multiple parameters.
+
+## State
+State is the data that a component maintains, which can change its value. This is one of the most important concepts in React. Inside the class-based component, I would include a constructor to initialize some values. The template to make a constructor is: 
+```
+constructor() {
+  super()
+  this.state = {}
+}
+```
+With event handling, I can also change the state of a Component with ```this.setState()```. This makes the app more dynamic and interactive. 
