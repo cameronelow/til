@@ -56,3 +56,5 @@ constructor() {
 }
 ```
 With event handling, I can also change the state of a Component with ```this.setState()```. This makes the app more dynamic and interactive. 
+
+These were some of the basics of React that I have learned so far. For my final project, I will be making a mobile app, which will build upon what I've learned so far in React development.
