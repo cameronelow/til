@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "Learning React for Mobile Apps"
+---
+
 At this point in the quarter, App Dev 2 split into two tracks: Option A was to continue building Ruby apps and Option B was learning to make mobile apps. I decided to go with Option B and learn a new type of app development. Although my mobile apps would be simpler compared to the advanced Ruby apps I've made so far, I wanted to take on the challenge. As such, I'm learning React through Scrimba, which involves some JavaScript and JSX. It's more readable than Bootstrap and it allows for web components. 
 
 This is my first time learning how to create a mobile app in React, and I'm excited to go down this track! Here are some of the key takeways from React.
